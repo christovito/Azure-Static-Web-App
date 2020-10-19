@@ -42,7 +42,7 @@
                 redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
-            fetch("https://18218043function.azurewebsites.net/api/HTTPTrigger?", requestOptions)
+            fetch("https://18218043function.azurewebsites.net/api/HTTPTrigger?code=V1kMpQua2GT/NEb9MNhs19G/qHH2ogepyktSik06yG1YqxMHNjzNLA==", requestOptions)
                 .then(response => response.text())
                 .then(result => alert(JSON.parse(result).body))
                 .catch(error => console.log('error', error));
