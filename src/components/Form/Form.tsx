@@ -28,7 +28,7 @@ const Form = () : ReactElement => {
     <React.Fragment>
       <div className={styles.container}>
       <div className={styles.welcome}>
-        Welcome { name }!
+        Welcome to Azure Web App!
       </div>
       <div  className={styles.formContainer}>
         <div className={styles.field}>
@@ -44,13 +44,13 @@ const Form = () : ReactElement => {
           <input type="text" value={last} className={styles.input} onChange={(e) => setLast(e.target.value)}/>
         </div>
         <div className={styles.btn} onClick={() => postData(first, last)}>
-          Call API !
+          Call API
         </div>
       </div>
     </div>
     <SweetAlert
       show={show}
-      title= {`Halo ${name}!`}
+      title= {`${name}, we have added your data!`}
       onConfirm={() => setShow(false)}
     />
     </React.Fragment>
